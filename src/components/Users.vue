@@ -13,7 +13,7 @@ export default {
   async setup() {
     const users = ref(null)
 
-    const usersResponse = await fetch('https://reqres.i/api/users?delay=3')
+    const usersResponse = await fetch('https://reqres.in/api/users?delay=3')
     const userData = await usersResponse.json()
     users.value = await userData.data
 
